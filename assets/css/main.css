@@ -13,3 +13,26 @@ body {
 body h1 span {
   color: var(--color-secundary);
 }
+
+
+/* nav */
+h1{
+  margin: 20px 0;
+}
+
+#div-logo{
+  margin-block: 10px;
+}
+
+ul{
+  display: flex;
+  flex-direction: row;
+}
+li{
+  margin-inline: 30px ;
+}
+
+#link-nav{
+  display: flex;
+  align-items: center;
+}
