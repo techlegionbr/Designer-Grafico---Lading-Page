@@ -1,0 +1,81 @@
+:root {
+  --font-montserrat: "Montserrat", sans-serif;
+  --color-primary: #0c1137;
+  --color-secundary: #00dbff;
+  --color-third: #0061ff;
+
+  --color-light: #fff;
+  
+}
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: var(--font-montserrat);
+  background-color: var(--color-primary);
+} 
+
+.contact-form {
+  max-width: 400px;
+  margin: 30px auto;
+  color: var(--color-secundary);
+  font-family: var(--font-montserrat);
+  margin-bottom: 10px;
+  max-width: 15;
+  width: 100%;
+  text-align: center;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid var(--color-secundary);
+  border-radius: 4px;
+  color: var(--color-light);
+}
+
+.contact-form button {
+  background-color: var(--color-light);
+  color: var(--color-third);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: var(--color-third);
+}
+
+.contact-form .back-button {
+  background-color: var(--color-light);
+  color: var(--color-third);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contact-form .back-button:hover {
+  background-color: var(--color-light);
+}
+
+.contact-form h2 {
+  display: block;
+  color: var(--color-secundary);
+  font-family: var(--font-montserrat);
+  margin-bottom: 10px;
+  max-width: 15;
+  width: 100%;
+  text-align: center;
+  padding: 5px;
+}
+
+.contact-form img {
+  min-width: 10px;
+  float: left;
+  margin-left: 10px;
+  max-width: 100px;
+  margin-bottom: 50px;
+}
