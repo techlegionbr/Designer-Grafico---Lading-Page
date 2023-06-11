@@ -30,7 +30,7 @@ ul {
 nav{
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
   background: #000;
   width: 100%;
 }

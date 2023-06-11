@@ -45,12 +45,18 @@ li{
   flex-direction: row;
 }
 
+@media (max-width: 900px) {
+  .home {
+    flex-wrap: wrap;
+  }
+}
+
 #home-text{
   margin: 5%;
 }
 
 #home-text button{
-  width: 40%;
+  width: 60%;
   margin: 20px 0;
   border: 10px solid var(--color-primary) ;
   background: var(--color-primary);
@@ -61,9 +67,11 @@ li{
 #home-img img{
   position: relative;
   width: 100%;
+  /*object-fit: cover;*/
   height: 110% ;
 }
 #home-img{
+  align-items: center;
   margin-inline: 3%;
 }
 
@@ -92,12 +100,20 @@ li{
 #cards{
   display: flex;
   flex-direction: row;
-  margin-inline: 2% ;
+  flex: 1;
+  flex-wrap:inherit;
+  /*margin-inline: 2% ;*/
+}
+@media (max-width: 900px) {
+  #cards {
+    flex-direction: column;
+    width: 90%;
+  }
 }
 
 .product{
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   background: #eee;
   margin: 1%;
   border: 1px solid #ccc;
@@ -107,9 +123,17 @@ li{
   justify-content: flex-start;
   padding: 3%;
 }
+@media (max-width: 900px) {
+  .product {
+    height: 240px;
+  }
+}
+
 .product h3{
   margin-block: 10px;
+  height: 50px;
 }
+
 #explicacao{
   display: flex;
   flex-direction: row;
@@ -124,13 +148,32 @@ li{
   width: 160%;
   bottom: 10%;
 }
+@media (max-width: 900px) {
+  #explicacao{
+    display: flex;
+    background-image: url(./../imgs/workstation-design.png);
+    background-size: cover;
+    background-position: center center;
+  }
+  #explicacao-img{ 
+    display: none;
+  }
+  #explicacao-text{ 
+    margin: 30px;
+    background-color: #000;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    text-align: center;
+  }
+}
 #explicacao-img{ 
  margin-inline: 5%;
  margin-right: 15%;
  width: 60%;
 }
 #explicacao-text{ 
-align-self: center;
+  align-self: center;
 }
 
 #sobre-nos{
@@ -139,7 +182,7 @@ align-self: center;
   align-items: center;
   width: 50%;
   text-align: center;
-  margin-bottom: 5%;
+  margin-block: 5%;
 }
 #sobre-nos h1{
   margin: 0 0 10px;
@@ -151,6 +194,16 @@ align-self: center;
   display: flex;
   justify-content: space-evenly;
   background: var(--color-primary);
+}
+@media (max-width: 900px) {
+  #contatos {
+    align-items: center;
+    background: url(./../imgs/workstation-contact.png);
+    background-size: 100%;
+  }
+  #contatos img {
+    display: none;
+  } 
 }
 form{
   align-self: center;
@@ -188,6 +241,7 @@ footer{
   width: 100%;
   flex-direction: column;
   display: flex;
+  flex-wrap: wrap;
   padding: 5% 6% 2% 6% ;
   align-items: center;
   justify-content: space-evenly;
@@ -195,8 +249,10 @@ footer{
 .footer-body{
   width: 100%;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around ;
+  flex: 1;
+  flex-wrap: wrap;
+  justify-content:space-between ;
+  gap: 2rem;
   margin: 0 0 100px 0;
 }
 
